@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="personalization.css">
+    <meta charset="UTF-8">
+    <title>Stripe|New account</title>
+</head>
+<body class="Background">
+    <div id="form2">
+        <form method="post" onsubmit="sendmessage()">
+            <h1 class="signup-title1">Sign up</h1>
+            <div class="container-form2">
+                <label class="username-title" for="username">Username</label>
+                <input id="username-text" type="text" required>
+                <label class="email-title" for="lastname">Email</label>
+                <input id="email-text" type="email" required>
+                <label class="password-title" for="lastname">Password</label>
+                <input id="password-text" type="password" required>
+                <a class="button1" type="submit" onclick="guardar()">Continue</a>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore-compat.js"></script>
+<script src="../script/Firebase.js"></script>
+<script src="../script/login.js"></script>
+</html>

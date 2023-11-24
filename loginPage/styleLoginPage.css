@@ -1,0 +1,128 @@
+/*****************************Below I created the style of the LOGIN PAGE*****************************/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Background{
+    background-color: #471eff;
+}
+
+/*This is the container div of the whole form of the log in page*/
+#form1{
+    margin: auto;
+    padding: auto;
+    height: 450px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #120064;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5em;
+    background-color: white;
+    box-shadow: 1px 5px 2em 0;
+}
+
+/*This is the title*/
+.login-title1{
+    margin: 10px;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/*This is the style of the container div of the requierements for log in*/
+
+.container-form1{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*This the style input's title of the email*/
+
+.email-title{
+    position: relative;
+    right: 95px;
+    margin-bottom: 5px;
+}
+
+/*This the style of the label from email*/
+
+.email-text{
+    margin-bottom: 27px;
+    border: solid 2px;
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    padding: 5px;
+    align-items: center;
+    border-color: #120064;
+}
+
+/*This the style of the input's title of the password*/
+
+.password-title{
+    position: relative;
+    right: 76px;
+    margin-bottom: 5px;
+}
+
+/*This the style of the label from password*/
+
+.password-text{
+    margin-bottom: 40px;
+    border: solid 2px;
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    padding: 5px;
+    align-items: center;
+    border-color: #120064;
+}
+
+/*This is the button style that submited the data of the page*/
+
+.button1{
+    color: white;
+    background-color: #471eff;
+    border-radius:20px;
+    align-items: center;
+    text-align: center;
+    padding: 5px 61px;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.button1:hover{
+    background-color: rgb(185, 185, 252);
+    color: black;
+}
+
+/*This is the button style for go to the sign page*/
+
+.button2{
+    text-decoration: none;
+    color: white;
+    background-color: #471eff;
+    border-radius:20px;
+    align-items: center;
+    text-align: center;
+    padding: 0px 15px 5px;
+    margin-top: 15px;
+}
+
+.button2:hover{
+    background-color: rgb(185, 185, 252);
+    color: black;
+}
