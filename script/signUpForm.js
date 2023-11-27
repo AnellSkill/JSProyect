@@ -19,15 +19,15 @@ signUpForm.addEventListener('submit', async (e) => {
     const userCredentials =  await createUserWithEmailAndPassword( auth, email, password)
     console.log(userCredentials)
 
-    showMessage ( 'Welcome' + userCredentials.user.email)
+    showMessage ( 'Welcome' + ' ' +  userCredentials.user.email)
 
    } catch (error) {
     if(error.code === 'auth/invalid-email'){
         showMessage('Invalid Email', 'email')
     }else if(error.code === 'auth/weak-password'){
-        alert('Invalid Password')
+        showMessage('Invalid Password', Error)
     }else if(error.code === 'auth/email-already-in-use'){
-    alert('The email already exist')
+        showMessage('The email already exist', 'Error')
     }else if(error.code){
     showMessage(error.message,'Error')
     }
