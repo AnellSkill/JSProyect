@@ -4,7 +4,7 @@ import { auth } from './Firebase.js'
 
 import './logout.js'
  
-import 'loginCheck.js'
+import './loginCheck.js'
 
 
 onAuthStateChanged(auth, async (user) =>  {
