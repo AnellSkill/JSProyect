@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="homeStyle.css" type="text/css">
     <meta charset="UTF-8">
     <title>Stripe|Home</title>
+    <script src="../script/logoutmain.js" type="module"></script>
 </head>
 <body>
     <div>
@@ -16,8 +17,9 @@
                     </div>
                     <div class="login">
                         <ul class="login-sites">
-                            <li><a href="../signUpPage/create.html">Create account</a></l>
-                            <li><a href="../loginPage/login.html">Log in</a></li>
+                            <li><a class="logged-in" href="../signUpPage/create.html">Create account</a></l>
+                            <li><a class="logged-in" href="../loginPage/login.html">Log in</a></li>
+                            <li><a href="#" class="logged-out">Log out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -51,6 +53,7 @@
             </section>
         </article>
     </main>
+    <script type="module">
+    </script>
 </body>
-<script src="../script/validation.js"></script>
 </html>
