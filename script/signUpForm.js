@@ -1,35 +1,34 @@
-const signUpForm = document.querySelector('#login-form')
+import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
+import { showMessage } from './showMessage.js';
+import { auth } from './Firebase.js';
 
-//Todo esto due importado
-import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js"
+// Encuentra el formulario usando la etiqueta del formulario
+const signUpForm = document.querySelector('form');
 
-import {showMessage} from './showMessage.js'
+if (signUpForm) {
+    signUpForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
-import { auth } from './Firebase.js'
+        const email = signUpForm['email-text'].value;
+        const password = signUpForm['password-text'].value;
 
-signUpForm.addEventListener('submit', async (e) => {
-    e.preventDefault()
+        console.log(email, password);
 
-    const email = signUpForm['email-text'].value
-    const password = signUpForm['password-text'].value
+        try {
+            const userCredentials = await createUserWithEmailAndPassword(auth, email, password);
+            console.log(userCredentials);
 
-    console.log( email, password)
-
-   try {
-    const userCredentials =  await createUserWithEmailAndPassword( auth, email, password)
-    console.log(userCredentials)
-
-    showMessage ( 'Welcome' + ' ' +  userCredentials.user.email)
-
-   } catch (error) {
-    if(error.code === 'auth/invalid-email'){
-        showMessage('Invalid Email', 'email')
-    }else if(error.code === 'auth/weak-password'){
-        showMessage('Invalid Password', Error)
-    }else if(error.code === 'auth/email-already-in-use'){
-        showMessage('The email already exist', 'Error')
-    }else if(error.code){
-    showMessage(error.message,'Error')
-    }
-   }
-})
+            showMessage('Welcome' + ' ' + userCredentials.user.email);
+        } catch (error) {
+            if (error.code === 'auth/invalid-email') {
+                showMessage('Invalid Email', 'email');
+            } else if (error.code === 'auth/weak-password') {
+                showMessage('Invalid Password', 'Error');
+            } else if (error.code === 'auth/email-already-in-use') {
+                showMessage('The email already exists', 'Error');
+            } else if (error.code) {
+                showMessage(error.message, 'Error');
+            }
+        }
+    });
+}
