@@ -3,17 +3,16 @@ import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.6.0/fi
 import { auth } from './Firebase.js'
 
 import './logout.js'
+
+import './signUpForm.js'
  
-import './loginCheck.js'
+import { loginCheck } from './loginCheck.js'
 
 
 onAuthStateChanged(auth, async (user) =>  {
-
-
-
     if (user){
-
+        loginCheck(user)
     }else{
-
+        loginCheck(user)
     }
 })
