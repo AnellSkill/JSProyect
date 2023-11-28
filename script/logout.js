@@ -1,18 +1,10 @@
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js"
+import { signOut } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js"
 
 import { auth } from './Firebase.js'
 
-import './logout.js'
+const logout = document.querySelector('.logged-out')
 
-import './signUpForm.js'
- 
-import { loginCheck } from './loginCheck.js'
-
-
-onAuthStateChanged(auth, async (user) =>  {
-    if (user){
-        loginCheck(user)
-    }else{
-        loginCheck(user)
-    }
+logout.addEventListener('click', async () => {
+  await  signOut(auth)
+  console.log('User signed Out')
 })
