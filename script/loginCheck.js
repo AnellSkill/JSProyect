@@ -1,15 +1,15 @@
-const loggedOutLinks = document.querySelectorAll('.logged-out') 
-const loggedInLinks = document.querySelectorAll('.logged-in')
+const loggedOutLinks = document.querySelectorAll(".logged-out");
+const loggedInLinks = document.querySelectorAll(".logged-in");
 
 console.log(loggedInLinks);
 console.log(loggedOutLinks);
 
-export const loginCheck = user =>{
-    if(user){
-        loggedInLinks.forEach(links => links.style.display = 'block')
-        loggedOutLinks.forEach(links => links.style.display = 'none')
-    }else{
-        loggedInLinks.forEach(links => links.style.display = 'none')
-        loggedOutLinks.forEach(links => links.style.display = 'block')
-    }
-}
+export const loginCheck = (user) => {
+  if (user) {
+    loggedInLinks.forEach((link) => (link.style.display = "none"));
+    loggedOutLinks.forEach((link) => (link.style.display = "block"));
+  } else {
+    loggedInLinks.forEach((link) => (link.style.display = "block"));
+    loggedOutLinks.forEach((link) => (link.style.display = "none"));
+  }
+};

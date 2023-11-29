@@ -12,19 +12,25 @@ body{
 img{
     height: 100px;
     width: 100px;
+    margin-bottom: 10px;
 }
 
 #container-welcome{
     background-color: #fff;
     margin: auto;
-    height: 330px;
+    height: 440px;
     width: 650px;
     text-align: center;
     border-radius: 15px;
     align-items: center;
-    margin-top: 95px;
+    margin-top: 75px;
     box-shadow: 1px 5px 2em 0;
     padding: 30px;
+}
+
+#container{
+    margin: 0;
+    text-align: center;
 }
 
 #logo{
@@ -36,14 +42,22 @@ img{
 }
 
 h1{
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+}
+
+#text{
+    display: flex;
+    width: 450px;
+    margin-bottom: 6px;
 }
 
 p{
-    margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 25px;
 }
 
-button{
+a{
     color: white;
     background-color: #471eff;
     border-radius:20px;
@@ -51,7 +65,6 @@ button{
     text-align: center;
     padding: 5px 61px;
     font-size: 0.9em;
-    margin-top: 15px;
     border: none;
     text-decoration: none;
 }

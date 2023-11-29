@@ -2,11 +2,14 @@ import { signOut } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth
 
 import { auth } from './Firebase.js'
 
-const logout = document.querySelector('.logged-out')
+const logout = document.querySelector('#logout')
 
-if(logout){
-  logout.addEventListener('click', async () => {
-    await  signOut(auth)
-    console.log('User signed Out')
-  })
-}
+logout.addEventListener("click", async (e) => {
+  e.preventDefault();
+  try {
+    await signOut(auth)
+    console.log("signup out");
+  } catch (error) {
+    console.log(error)
+  }
+});
