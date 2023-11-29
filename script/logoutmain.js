@@ -4,8 +4,10 @@ import { auth } from './Firebase.js'
 
 import './logout.js'
 
+import './signInForm.js'
+
 import './signUpForm.js'
- 
+
 import { loginCheck } from './loginCheck.js'
 
 

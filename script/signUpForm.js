@@ -1,7 +1,6 @@
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
-import { showMessage } from './showMessage.js';
-import { auth } from './Firebase.js';
 
+import { auth } from './Firebase.js';
 // Encuentra el formulario usando la etiqueta del formulario
 const signUpForm = document.querySelector('form');
 
@@ -13,7 +12,6 @@ if (signUpForm) {
         const password = signUpForm['password-text'].value;
 
         console.log(email, password);
-
         try {
             const userCredentials = await createUserWithEmailAndPassword(auth, email, password);
             console.log(userCredentials);
@@ -21,7 +19,7 @@ if (signUpForm) {
             showMessage('Welcome' + ' ' + userCredentials.user.email);
         } catch (error) {
             if (error.code === 'auth/invalid-email') {
-                showMessage('Invalid Email', 'email');
+                showMessage('Invalid Email', 'Error');
             } else if (error.code === 'auth/weak-password') {
                 showMessage('Invalid Password', 'Error');
             } else if (error.code === 'auth/email-already-in-use') {

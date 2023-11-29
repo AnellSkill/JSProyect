@@ -4,7 +4,9 @@ import { auth } from './Firebase.js'
 
 const logout = document.querySelector('.logged-out')
 
-logout.addEventListener('click', async () => {
-  await  signOut(auth)
-  console.log('User signed Out')
-})
+if(logout){
+  logout.addEventListener('click', async () => {
+    await  signOut(auth)
+    console.log('User signed Out')
+  })
+}

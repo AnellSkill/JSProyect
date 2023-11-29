@@ -2,7 +2,7 @@ export function showMessage(message, type = 'success'){
     Toastify({
         text: message,
         duration: 5000,
-        destination: "../homePage/home.html",
+        destination: "#",
         newWindow: true,
         close: true,
         gravity: "bottom", // `top` or `bottom`
