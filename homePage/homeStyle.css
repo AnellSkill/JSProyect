@@ -39,9 +39,10 @@
     text-decoration: none;
 }
 #logo-netshop{
-    width: 37px;
-    height: 37px;
+    width: 55px;
+    height: 55px;
     display: inline;
+    margin-right: 10px;
 }
 #container{
     padding: 5px;
@@ -84,7 +85,7 @@
 
 .back{
     position: static;
-    width: 68.3vw;
+    width: 68.2vw;
     height: 100vh;
     margin: 0 0 0 416.5px;
     height: 821px;
