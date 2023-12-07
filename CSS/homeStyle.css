@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header-container{
+    margin: 4px;
+    height: 2.5em;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    font-size: 5px;
+    margin-left: 20px;
+    height: 40px;
+    width: auto;
+    justify-content: center;
+}
+.logo-container a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+.logo-container a h1{
+    margin: 5px;
+    color: black;
+}
+.logo-container a{
+    text-decoration: none;
+}
+.logo-netshop{
+    text-decoration: none;
+}
+#logo-netshop{
+    width: 55px;
+    height: 55px;
+    display: inline;
+    margin-right: 10px;
+}
+#container{
+    padding: 5px;
+    height: 4em;
+    display: flex;
+}
+.links{
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    padding-left: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.links li a{
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+.links li{
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #cbc1f8;
+    margin: 10px;
+    padding: 2px;
+}
+.links li:hover{
+    background-color: #471eff;
+}
+.links li a:hover{
+    color: #fff;
+}
+
+.links{
+    align-items: center;
+    list-style: none;
+    border: none;
+}
+
+.back{
+    position: static;
+    width: 68.2vw;
+    height: 100vh;
+    margin: 0 0 0 416.5px;
+    height: 821px;
+}
+
+.section-container{
+    height: 200px;
+    width: 505.38px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 12em;
+    left: 70px;
+    display: block;
+    list-style: none;
+}
+.section-container h1{
+    font-size: 4em;
+}
+.cellphone-back{
+    position: absolute;
+    left: 665px;
+    bottom: 0;
+    top: 40px;
+}
+body{
+    background-color: #fff;
+}
+.section-container p{
+    margin-top: 15px;
+    margin-bottom: 24px;
+}
+.section-container li{
+    background-color:#471eff;
+    border-radius: 20px;
+    padding: 5px;
+    width: 210px;
+    text-align: center;
+}
+.section-container a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px 20px;
+}
+.section-container li:hover{
+    background-color: rgb(185, 185, 252);
+}
+.section-container li a:hover{
+    color: black;
+}
+
